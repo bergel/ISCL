@@ -1,5 +1,42 @@
 #!/usr/bin/env bash
 
-echo "TO DO"
+# stop if there is an error
+set -ex
 
-exit 1
+
+#########
+# BUILD #
+#########
+
+# local: ensure latest website at _site/
+bundle exec jekyll build
+
+
+##############
+# SEND FILES #
+##############
+
+TARGET=isclab@isclab.dcc.uchile.cl
+
+# remote: make a copy of the currently public website into _site/
+ssh $TARGET -p122 /bin/bash << EOF
+rm -r _site/
+cp -r htdocs/ _site/
+EOF
+
+# update remote _site/ with local _site/
+rsync --delete -avPe "ssh -p122" _site/ $TARGET:/info/usr/isclab/_site
+
+
+###########
+# PUBLISH #
+###########
+
+# remote: rename _site/ as htdocs/ (keep htdocs.latest/)
+ssh $TARGET -p122 /bin/bash << EOF
+rm -r htdocs.latest/
+mv htdocs/ htdocs.latest/
+mv _site/ htdocs/
+EOF
+
+echo "SUCCESS: website published at https://isclab.dcc.uchile.cl/"
