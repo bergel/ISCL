@@ -1,12 +1,38 @@
 #!/usr/bin/env bash
 
 # stop if there is an error
-set -ex
+set -e
 
 
-#########
-# BUILD #
-#########
+###########
+# PREPARE #
+###########
+
+
+# local: Update the index
+git update-index -q --refresh
+
+# local: Disallow unstaged changes in the working tree
+if ! git diff-files --quiet --
+then
+    echo >&2 "FAILURE: you have unstaged changes."
+    exit 1
+fi
+
+# local: Disallow uncommitted changes in the index
+if ! git diff-index --cached --quiet HEAD --
+then
+    echo >&2 "FAILURE: your index contains uncommitted changes."
+    exit 1
+fi
+
+# local/remote: check nothing to pull or push
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse origin)
+if [ $LOCAL != $REMOTE ]; then
+  echo "FAILURE: Must do git push or pull."
+  exit 1
+fi
 
 # local: ensure latest website at _site/
 bundle exec jekyll build
