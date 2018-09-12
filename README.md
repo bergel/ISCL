@@ -17,14 +17,17 @@ Hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/
 
 ## Edit and test locally
 
-The following command generates the website and starts a server to test it locally in your computer.
+The following command generates the website and starts a server to test it locally in your computer (<http://127.0.0.1:4000>).
 
 ```bash
-$ bundle exec jekyll serve --incremental
+$ bundle exec jekyll serve --livereload
 ```
+When jekyll detects a change in your source files, it regenerates the website and refreshes the browser.
 
-Now you can edit the source files and test the output at <http://127.0.0.1:4000> in your browser.
 You can freely **commit** and **push** changes without any effect in the published website.
+
+**Note**: The `--incremental` option reduces the time to regenerate. However, in `jekyll 3.7.3` this option doesn't work well with inline news (`index.html` isn't regenerated).
+
 
 ### Add news
 
