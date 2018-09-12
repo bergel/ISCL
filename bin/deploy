@@ -8,6 +8,11 @@ set -e
 # PREPARE #
 ###########
 
+if [ ! -d ".git" ]; then
+    echo >&2 "FAILURE: Your pwd is not the base directory."
+    exit 1
+fi
+
 # local: Update the index
 git update-index -q --refresh
 
@@ -29,7 +34,7 @@ fi
 LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse origin)
 if [ $LOCAL != $REMOTE ]; then
-  echo "FAILURE: Must do git push or pull."
+  echo >&2 "FAILURE: Must do git push or pull."
   exit 1
 fi
 
