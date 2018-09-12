@@ -1,6 +1,6 @@
-# ISCL
+# ISCLab
 
-Jekyll website for Intelligent Software Construction Laboratory.
+This is the [Jekyll](https://jekyllrb.com/) website for Intelligent Software Construction Laboratory.
 
 ## Upstream
 
