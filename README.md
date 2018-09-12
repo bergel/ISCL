@@ -1,10 +1,15 @@
 # ISCL
+
 Jekyll website for Intelligent Software Construction Laboratory.
+
+## Upstream
 
 It's based on the [al-folio theme](https://github.com/alshedivat/al-folio). More exactly, based on [this commit](https://github.com/alshedivat/al-folio/tree/8fc0c4b4e32ba7583e65ee95159903355c9d5ced).
 
 
-## First time: Installation
+## Environment
+
+### First time: Installation
 
 Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system, do the following:
 
@@ -15,16 +20,19 @@ $ bundle install
 Hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv).
 
 
-## Edit and test locally
+### Staying up-to-date
 
-The following command generates the website and starts a server to test it locally in your computer (<http://127.0.0.1:4000>).
+The [official doc](https://jekyllrb.com/docs/upgrading/) recommends updating Jekyll often via `bundle update jekyll`.
+
+
+## Changing the website
+
+The following command generates the website locally in your computer and starts a server to test it (<http://127.0.0.1:4000>):
 
 ```bash
 $ bundle exec jekyll serve --livereload
 ```
-When jekyll detects a change in your source files, it regenerates the website and refreshes the browser.
-
-You can freely **commit** and **push** changes without any effect in the published website.
+When jekyll detects a change in source files, it regenerates the website and refreshes the browser.
 
 **Note**: The `--incremental` option reduces the time to regenerate. However, in `jekyll 3.7.3` this option doesn't work well with inline news (`index.html` isn't regenerated).
 
@@ -64,14 +72,16 @@ You can also add new `*.bib` files and customize the look of your publications h
 Keep meta-information about co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 
 
-### Change styles
+### Tweak styles
 
 The `_sass/_variables.scss` file provides several possibilities to customize colors, fonts, etc.
 
 
 ## Publish
 
-When you are done with changes and want to publish (deploy) the website, you can run:
+You can freely **commit** and **push** changes without any effect in the published website.
+
+Run this script when you are done with changes and want to publish (deploy) the new website:
 
 ```bash
 $ bin/deploy
