@@ -1,5 +1,17 @@
-# Possible improvements:
+# Must do
 
-* show which commit generated the website, via:
-https://github.com/ivantsepp/jekyll-git_metadata
+* fix bib
+* fix image: use Geoffrey's logo
 
+
+# Possible improvements
+
+* projects? teaching?
+
+* create google analytics id
+
+* latest website generation: 
+    + show timestamp
+    + show commit (https://github.com/ivantsepp/jekyll-git_metadata)
+
+* publications search
