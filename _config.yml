@@ -94,3 +94,12 @@ scholar:
 jquery_version: "1.12.4"
 katex_version: "0.9.0"
 anchorjs_version: "3.2.2"
+
+
+# Exclude files from processing
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - README.md
+   - LICENSE
+   - bin/
