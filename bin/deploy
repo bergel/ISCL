@@ -8,21 +8,20 @@ set -e
 # PREPARE #
 ###########
 
-
 # local: Update the index
 git update-index -q --refresh
 
 # local: Disallow unstaged changes in the working tree
 if ! git diff-files --quiet --
 then
-    echo >&2 "FAILURE: you have unstaged changes."
+    echo >&2 "FAILURE: You have unstaged changes."
     exit 1
 fi
 
 # local: Disallow uncommitted changes in the index
 if ! git diff-index --cached --quiet HEAD --
 then
-    echo >&2 "FAILURE: your index contains uncommitted changes."
+    echo >&2 "FAILURE: Your index contains uncommitted changes."
     exit 1
 fi
 
@@ -65,4 +64,4 @@ mv htdocs/ htdocs.latest/
 mv _site/ htdocs/
 EOF
 
-echo "SUCCESS: website published at https://isclab.dcc.uchile.cl/"
+echo "SUCCESS: Website updated at https://isclab.dcc.uchile.cl/"
