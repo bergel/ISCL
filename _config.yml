@@ -5,9 +5,8 @@ name: Intelligent Software Construction Laboratory
 title: Intelligent Software Construction Laboratory
 abbrname: ISCLab
 email: alexandre.bergel@me.com
-description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
+description: Website of ISCLab
+footer_text: > # this means to ignore newlines
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url: https://isclab.dcc.uchile.cl/ # the base hostname & protocol for your site
@@ -40,9 +39,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
+  people:
     output: true
-    permalink: /projects/:path/
+    permalink: /people/:path/
 
 news_limit: 5
 
