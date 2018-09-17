@@ -14,6 +14,8 @@ It's based on the [al-folio theme](https://github.com/alshedivat/al-folio). More
 Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system, do the following:
 
 ```bash
+$ git clone git@github.com:bergel/ISCL.git
+$ cd ISCL
 $ bundle install
 ```
 
