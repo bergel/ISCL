@@ -1,12 +1,9 @@
 # Must do
 
 * fix bib
-* fix image: use Geoffrey's logo
 
 
 # Possible improvements
-
-* projects? teaching?
 
 * create google analytics id
 
