@@ -6,8 +6,7 @@ description: <a href="https://www.dcc.uchile.cl">Department of Computer Science<
 
 profile:
   align: right
-  image: abstract-h-c-200-300-5.jpg
-  address: #
+  image: logo.png
 
 news: true
 social: true
