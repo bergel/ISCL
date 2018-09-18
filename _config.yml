@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 name: Intelligent Software Construction Laboratory
 title: Intelligent Software Construction Laboratory
-abbrname: ISCLab
+abbreviated_name: ISCLab
 email: alexandre.bergel@me.com
 description: Website of ISCLab
 footer_text: > # this means to ignore newlines
