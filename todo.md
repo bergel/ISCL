@@ -5,6 +5,8 @@
 
 # Possible improvements
 
+* create github release before deploy?
+
 * create google analytics id
 
 * latest website generation: 
