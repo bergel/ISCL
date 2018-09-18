@@ -1,0 +1,7 @@
+host       : isclab.dcc.uchile.cl
+ssh puerto : 122
+usuario    : isclab
+
+ssh isclab@isclab.dcc.uchile.cl -p 122
+
+
