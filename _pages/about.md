@@ -9,7 +9,7 @@ profile:
   image: logo.png
 
 news: true
-social: true
+social: false # this option adds a section at the end with email, twitter, etc.
 ---
 
 We develop techniques and methodology to build software systems that are performant & energy efficient.

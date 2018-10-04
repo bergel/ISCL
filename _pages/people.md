@@ -1,8 +1,8 @@
 ---
 layout: page
-title: people
+title: People
 permalink: /people/
-description: Members of this laboratory
+description: Members of this laboratory.
 published: true
 ---
 
