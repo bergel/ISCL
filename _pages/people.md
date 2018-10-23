@@ -1,28 +1,20 @@
 ---
 layout: page
-title: People
+title: Participants
 permalink: /people/
-description: Members of this laboratory.
+description: People that participate in this laboratory.
 published: true
 ---
 
+<ul>
 {% for person in site.people %}
 
-<div class="person ">
-    <div class="thumbnail">
-        <a href="{{ person.redirect }}" target="_blank">
-        {% if person.img %}
-        <img class="thumbnail" src="{{ person.img | prepend: site.baseurl | prepend: site.url }}"/>
-        {% else %}
-        <div class="thumbnail blankbox"></div>
-        {% endif %}    
-        <span>
-            <h1>{{ person.title }}</h1>
-            <br/>
-            <p>{{ person.description }}</p>
-        </span>
-        </a>
-    </div>
-</div>
+<li>
+    <a href="//{{ person.redirect }}" target="_blank"><span>{{ person.title }}</span></a> -
+    <span>{{ person.description }}</span>
+</li>
 
 {% endfor %}
+</ul>
+
+<img class="everybody" src="{{ '/assets/img/everybody.jpg' | prepend: site.baseurl | prepend: site.url }}"/>

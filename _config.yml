@@ -40,7 +40,6 @@ collections:
     output: true
     permalink: /news/:path/
   people:
-    output: true
     permalink: /people/:path/
 
 news_limit: 5
