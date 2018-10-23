@@ -19,10 +19,14 @@ $ cd ISCL
 $ bundle install
 ```
 
-Hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv).
+**Hint**: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv).
+
+**Note**: These steps probed to work on:
+- Bundler version 1.16.4 (`bundle --version`)
+- Jekyll 3.7.4 (`bundle show jekyll`)
 
 
-### Staying up-to-date
+**Staying up-to-date**
 
 The [official doc](https://jekyllrb.com/docs/upgrading/) recommends updating Jekyll often via `bundle update jekyll`.
 
