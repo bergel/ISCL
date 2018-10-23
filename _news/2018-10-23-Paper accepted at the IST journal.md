@@ -1,0 +1,1 @@
+Paper titled _Slimming JavaScript Applications: an Approach for Removing Unused Functions from JavaScript Libraries_ is accepted at _Information and Software Technology_, by Hernán Ceferino Vázquez, Alexandre Bergel, Santiago Vidal, Andres Diaz Pace, Claudia Marcos.
