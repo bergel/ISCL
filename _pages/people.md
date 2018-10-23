@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Participants
-permalink: /people/
+title: Team
+permalink: /team/
 description: People that participate in this laboratory.
 published: true
 ---

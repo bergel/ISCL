@@ -39,7 +39,7 @@ collections:
     output: true
     permalink: /news/:path/
   people:
-    permalink: /people/:path/
+    permalink: /team/:path/
 
 news_limit: 5
 
