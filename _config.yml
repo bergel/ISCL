@@ -7,11 +7,10 @@ abbreviated_name: ISCLab
 email: alexandre.bergel@me.com
 description: Website of ISCLab
 footer_text: > # this means to ignore newlines
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.
 
 url: https://isclab.dcc.uchile.cl/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # Social integration
