@@ -70,4 +70,6 @@ mv htdocs/ htdocs.latest/
 mv _site/ htdocs/
 EOF
 
-echo "SUCCESS: Website updated at https://isclab.dcc.uchile.cl/"
+echo
+echo "--> SUCCESS: Website updated at https://isclab.dcc.uchile.cl/"
+echo "--> Last SHA: `git rev-parse --short HEAD`"
