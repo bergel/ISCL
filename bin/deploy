@@ -39,6 +39,7 @@ if [ $LOCAL != $REMOTE ]; then
 fi
 
 # local: ensure latest website at _site/
+bundle exec jekyll clean
 bundle exec jekyll build
 
 
