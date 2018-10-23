@@ -1,11 +1,7 @@
-# Must do
-
-* fix bib
-
 
 # Possible improvements
 
-* create github release before deploy?
+* create git tag or github release before deploy
 
 * create google analytics id
 
