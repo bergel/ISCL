@@ -65,10 +65,11 @@ exclude:
 
 # Plug-ins
 plugins:
-    - jekyll-email-protect
-    - jekyll-paginate
-    - jekyll/scholar
-    - jemoji
+  - jekyll-email-protect
+  - jekyll-paginate
+  - jekyll/scholar
+  - jemoji
+  - jekyll-git_metadata
 
 # Jekyll-Scholar
 scholar:
