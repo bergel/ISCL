@@ -9,6 +9,13 @@ fi
 
 FILENAME=`date "+%Y-%m-%d"`-"$1".md
 touch "$FILENAME"
+echo "--- 
+layout: post 
+date: " `date "+%Y-%m-%d"` >> "$FILENAME"
+echo "inline: true
+---
+" >> "$FILENAME"
+
 emacs "$FILENAME"
 git add "$FILENAME"
 
