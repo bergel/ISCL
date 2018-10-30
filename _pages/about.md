@@ -12,10 +12,10 @@ news: true
 social: false # this option adds a section at the end with email, twitter, etc.
 ---
 
-We develop techniques and methodology to build software systems that are performant & energy efficient.
+We develop methodologies to build software systems that are both resource efficient (CPU, memory, energy) and adequate with modern software development techniques. We regularly contribute to open source ecosystems and corporate software systems. 
 
 **Our mission includes:**
-* Research and develop techniques to make software performant, eco-friendly, and less resource consumming. To meet these objectives we employ artificial intelligence techniques, empirical studies, and data visualizations.
+* Research and develop techniques to make software efficient, eco-friendly, and less resource consuming. To meet these objectives we employ deep learning techniques, empirical studies, and data visualizations.
 * Improving the development of software systems for resource intensive systems and robotics systems.
 * Preparing students to leading position in software industry and academia.
 
