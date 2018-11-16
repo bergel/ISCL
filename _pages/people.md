@@ -10,8 +10,12 @@ published: true
 {% for person in site.people %}
 
 <li>
-    <a href="//{{ person.redirect }}" target="_blank"><span>{{ person.title }}</span></a> -
-    <span>{{ person.description }}</span>
+    {% if person.redirect %}
+    <a href="//{{ person.redirect }}" target="_blank"><span>{{ person.title }}</span></a>
+    {% else %}
+    <span>{{ person.title }}</span>
+    {% endif %}    
+    - <span>{{ person.description }}</span>
 </li>
 
 {% endfor %}
