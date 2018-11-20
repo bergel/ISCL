@@ -41,7 +41,7 @@ collections:
   people:
     permalink: /team/:path/
 
-news_limit: 30
+news_limit: 8
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
