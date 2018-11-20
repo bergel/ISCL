@@ -12,7 +12,7 @@ news: true
 social: false # this option adds a section at the end with email, twitter, etc.
 ---
 
-We develop methodologies to build software systems that are both resource efficient (CPU, memory, energy) and adequate with modern software development techniques. We push further the frontier knowledge of Software Engineering with innovative, rigorous empirical evaluation, and valuable software artifacts. We regularly contribute to open source ecosystems and corporate software systems. 
+The ISCLab develops methodologies to build software systems that are both resource efficient (CPU, memory, energy) and adequate with modern software development techniques. We push further the knowledge frontier of Software Engineering with innovative methodologies, rigorous empirical evaluations, and valuable software artifacts. We regularly contribute to open source ecosystems and corporate software systems. 
 
 **Our mission includes:**
 * Research and develop techniques to make software efficient, eco-friendly, and less resource consuming. To meet these objectives we employ deep learning techniques, empirical studies, and data visualizations.
