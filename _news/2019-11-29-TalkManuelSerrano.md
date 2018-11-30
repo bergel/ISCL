@@ -2,14 +2,14 @@
 layout: post 
 date:  2018-11-29
 inline: false
-title: 'Talk: "Hop.js: JavaScript Multitier Programming"'
+title: 'Announcement of a talk of Manuel Serrano entitled "Hop.js: JavaScript Multitier Programming".'
 ---
 
-**Charlista**: Manuel Serrano
+**Speaker**: Manuel Serrano
 
-**Fecha**: Lunes 3 de diciembre 2018, 15:00 hrs.
+**Date**: Lunes 3 de diciembre 2018, 15:00 hrs.
 
-**Lugar**: Grace Hopper, sala N° 307 (3er piso, Edificio Poniente, Beauchef 851)
+**Place**: Grace Hopper, sala N° 307 (3er piso, Edificio Poniente, Beauchef 851)
 
 #### **Abstract**
 Hop.js is a multitier programming environment for JavaScript. It allows a single JavaScript program to describe the client-side and the server-side components of a web application. Its runtime environment ensures consistent executions of the application on the server and on the client. In this presentation we will overview the language design and its implementation. We will show that the concept of “programs generating programs” is ubiquitous in the system and we will show how it makes it possible to conceive web applications globally.
