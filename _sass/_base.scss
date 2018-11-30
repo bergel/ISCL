@@ -30,3 +30,7 @@ body {
     padding-left: $horizontal-spacing-unit;
     @extend .clearfix;
 }
+
+strong {
+  font-weight: bold;
+}
