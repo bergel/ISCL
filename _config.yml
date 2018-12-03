@@ -69,7 +69,8 @@ plugins:
   - jekyll/scholar
   - jemoji
   - jekyll-git_metadata
-
+  - jekyll-sitemap
+  
 # Jekyll-Scholar
 scholar:
 
