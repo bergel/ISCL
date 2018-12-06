@@ -2,7 +2,7 @@
 layout: post 
 date:  2018-12-05
 inline: false
-title: 'Towards a Framework for Comprehensive Evaluation of Software Visualizations based on Cognitive Processes'
+title: 'Announcement of a talk by Leonel Merino: "Towards a Framework for Comprehensive Evaluation of Software Visualizations based on Cognitive Processes"'
 ---
 
 **Speaker**: Leonel Merino
