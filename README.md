@@ -11,7 +11,10 @@ It's based on the [al-folio theme](https://github.com/alshedivat/al-folio). More
 
 ### First time: Installation
 
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system, do the following:
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system. If you do not have bundler, you can do `gem install bundler --user-install` .
+Do not forget to add in your startup script file: `export PATH=$PATH:~/.gem/ruby/2.3.0/bin`
+
+Do the following:
 
 ```bash
 $ git clone git@github.com:bergel/ISCL.git
