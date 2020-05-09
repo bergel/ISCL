@@ -19,6 +19,7 @@ echo "inline: true
 
 emacs "$FILENAME"
 git add "$FILENAME"
+git commit -m "added news" && git push
 
 
 
