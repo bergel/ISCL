@@ -81,6 +81,24 @@ You can also add new `*.bib` files and customize the look of your publications h
 Keep meta-information about co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 
 
+### Add people
+
+The Team page has two lists of persons. 
+Each person corresponds to a `.md` file either in the directory `_people/` or `_alumni/`. 
+Such files require a `title` and `description` and can *optionally* have an hyperlink to a personal page as `redirect`.
+The file name is only used to sort the items (not 100% sure of this).
+Example:
+
+~~~
+$ cat martin_dias.md
+---
+title: Martín Dias
+description: Postdoc
+redirect: tinchodias.github.io
+---
+~~~
+
+
 ### Tweak styles
 
 The `_sass/_variables.scss` file provides several possibilities to customize colors, fonts, etc.
