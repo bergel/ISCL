@@ -40,6 +40,8 @@ collections:
     permalink: /news/:path/
   people:
     permalink: /team/:path/
+  alumni:
+    permalink: /alumni/:path/
 
 news_limit: 8
 
