@@ -31,8 +31,9 @@ then
 fi
 
 # local/remote: check nothing to pull or push
+git fetch
 LOCAL=$(git rev-parse @)
-REMOTE=$(git rev-parse origin)
+REMOTE=$(git rev-parse @{u})
 if [ $LOCAL != $REMOTE ]; then
   echo >&2 "FAILURE: Must do git push or pull."
   exit 1
