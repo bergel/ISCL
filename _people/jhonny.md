@@ -1,4 +1,4 @@
 ---
 title: Jhonny Cerezo
-description: PhD Student
+description: Master Student
 ---

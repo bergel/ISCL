@@ -1,5 +1,5 @@
 ---
 title: Martín Dias
-description: Postdoc
-redirect: tinchodias.github.io
+description: Postdoc - Researcher
+redirect: http://tinchodias.github.io
 ---

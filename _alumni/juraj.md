@@ -1,4 +1,4 @@
 ---
 title: Juraj Kubelka
-description: PhD Student
+description: PhD Student (May 2020)
 ---

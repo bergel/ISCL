@@ -1,5 +1,5 @@
 ---
 title: Diego Orellana
-description: Undergrad
+description: Undergrad (April 2019)
 redirect: https://github.com/dorellang
 ---
