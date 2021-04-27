@@ -17,7 +17,8 @@ echo "inline: true
 ---
 " >> "$FILENAME"
 
-emacs "$FILENAME"
+#emacs "$FILENAME"
+vi "$FILENAME"
 git add "$FILENAME"
 git commit -m "added news" && git push
 
