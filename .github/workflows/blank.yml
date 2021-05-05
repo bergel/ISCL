@@ -1,11 +1,16 @@
 name: Deploy
 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push or pull request events but only for the master branch. 
+  # But ignore a change erduced to the README.
   push:
     branches: [ master ]
+    paths-ignore:
+      - README.md
   pull_request:
     branches: [ master ]
+    paths-ignore:
+      - README.md
 
   # Allows running this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +21,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+     
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+          bundler-cache: true
 
-      - name: Generate static website and deploy
+      - name: Build using Jekyll
+        run: bundle exec jekyll build --trace
+
+      - name: Deploy via SSH
         run: ./bin/deploy
