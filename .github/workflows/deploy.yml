@@ -28,13 +28,11 @@ jobs:
 
       - name: Install Ruby Bundler
         run: |
-          sudo gem install bundler --user-install
+          sudo gem install bundler
           bundle --version
 
       - name: Install Jekyll and other dependencies in Gemfile
-        run: |
-          sudo bundle install
-          bundle show jekyll
+        run: sudo bundle install
 
       - name: Run Jekyll to generate website files
         run: bundle exec jekyll build --trace
