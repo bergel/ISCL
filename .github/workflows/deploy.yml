@@ -26,12 +26,17 @@ jobs:
           ruby-version: '2.7'
           bundler-cache: true
 
-      - name: Install Bundler
+      - name: Install Ruby Bundler
         run: |
-          gem install bundler --user-install
-          bundle install
+          sudo gem install bundler --user-install
+          bundle --version
 
-      - name: Build static website using Jekyll
+      - name: Install Jekyll and other dependencies in Gemfile
+        run: |
+          sudo bundle install
+          bundle show jekyll
+
+      - name: Run Jekyll to generate website files
         run: bundle exec jekyll build --trace
 
       - name: Add SSH key
