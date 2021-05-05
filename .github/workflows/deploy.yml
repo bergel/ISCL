@@ -20,19 +20,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Ruby
+      - name: Setup Ruby and install Gemfile dependencies
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.7'
           bundler-cache: true
-
-      - name: Install Ruby Bundler
-        run: |
-          sudo gem install bundler
-          bundle --version
-
-      - name: Install Jekyll and other dependencies in Gemfile
-        run: sudo bundle install
 
       - name: Run Jekyll to generate website files
         run: bundle exec jekyll build --trace
