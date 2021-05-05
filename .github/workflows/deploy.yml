@@ -26,7 +26,12 @@ jobs:
           ruby-version: '2.7'
           bundler-cache: true
 
-      - name: Build using Jekyll
+      - name: Install Bundler
+        run: |
+          gem install bundler --user-install
+          bundle install
+
+      - name: Build static website using Jekyll
         run: bundle exec jekyll build --trace
 
       - name: Add SSH key
