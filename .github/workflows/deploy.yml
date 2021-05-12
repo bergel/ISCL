@@ -1,0 +1,39 @@
+name: Deploy
+
+on:
+  # Triggers the workflow on push to master branch. 
+  # But ignore a change erduced to the README.
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - README.md
+
+  # Allows running this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and install Gemfile dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+          bundler-cache: true
+
+      - name: Run Jekyll to generate website files
+        run: bundle exec jekyll build --trace
+
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.ISCLAB_SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.ISCLAB_KNOWN_HOSTS }}
+
+      - name: Deploy via SSH
+        run: ./bin/deploy
